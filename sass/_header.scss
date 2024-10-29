@@ -1,0 +1,29 @@
+.header{
+    overflow: hidden;
+    height: 70px;
+    padding: 30px ;
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &__collection{
+            display: flex;
+            gap: 24px;
+            font-size: 14px;
+            font-weight: 500;
+            color: #000;
+        }
+        &__item:active{
+            transform: scale(.96);
+            color: brown;
+        }
+    }
+}
+
+@media (max-width: 650px) {
+    .navbar{
+        &__logo{
+            display: none;
+        }
+    }
+}
